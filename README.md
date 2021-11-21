@@ -9,9 +9,9 @@ ____
 * 
 ____
 ### Ссылки на описание ситуаций
-* [ped1/Test](./description of situations/ped1_test.md);
-* [ped1/Train](./description of situations/ped1_train.md);
-* [ped2/Test](./description of situations/ped2_test.md);
-* [ped2/Train](./description of situations/ped2_train.md);
+* [ped1/Test](./ped1_test.md);
+* [ped1/Train](./ped1_train.md);
+* [ped2/Test](./ped2_test.md);
+* [ped2/Train](./ped2_train.md);
 
 ___
