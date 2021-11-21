@@ -9,9 +9,9 @@ ____
 * 
 ____
 ### Ссылки на описание ситуаций
-* [ped1/Test](ped2_train.md);
-* [ped1/Train](ped1_train.md);
-* [ped2/Test](ped2_test.md);
-* [ped2/Train](ped2_train.md);
+* [ped1/Test](https://github.com/stlad/UCSD_project_stuff/blob/4ebb2727f38457d7c5f7bb7bbf7643676045e0fe/description%20of%20situations/ped1_test.md);
+* [ped1/Train](https://github.com/stlad/UCSD_project_stuff/blob/4ebb2727f38457d7c5f7bb7bbf7643676045e0fe/description%20of%20situations/ped1_train.md);
+* [ped2/Test](https://github.com/stlad/UCSD_project_stuff/blob/4ebb2727f38457d7c5f7bb7bbf7643676045e0fe/description%20of%20situations/ped2_test.md);
+* [ped2/Train](https://github.com/stlad/UCSD_project_stuff/blob/4ebb2727f38457d7c5f7bb7bbf7643676045e0fe/description%20of%20situations/ped2_train.md);
 
 ___
