@@ -3,15 +3,22 @@ ___
 Здесь собирется информация и ссылки на важные для пректа ресурсы и файлы.
 
 ____
-### Полезные ссылки
+
+## Содержание
+* [полезные ссылки](#links)
+* [description of sitations](#descr)
+* [Работа с папкой Видео и нарезкой на кадры](#mp4_conv)
+* [установка и работа с Unity Recorder](#un_rec)
+___
+## <a name="links"></a> Полезные ссылки
 * [сжать картинку до нужных размеров](https://www.imgonline.com.ua/resize-image.php) 
 * [конвертер mp4 в tiff](https://www.converter365.com/video-converter/mp4/mp4-to-tiff)
 * 
 ____
-### Папка description of sitations 
+## <a name="descr"></a> Папка description of sitations 
 в ней лежат файлы, написанные Иваном с опсианием ситуаций
 ___
-### Папка видео
+## <a name="mp4_conv"></a> Папка видео
 * скачивется репозиторий
 * в папку кладутся видео в .mp4
 * запускается файл `mp4_tiff_converter.py`
@@ -19,7 +26,7 @@ ___
 * обрезка кадров пока не реализована
 
 
-### Основной файл и работа 
+## Основной файл и работа 
 `mp4_tiff_converter.py`
 
 ```python
@@ -46,11 +53,34 @@ for video in [file for file in os.listdir(path) if file.__contains__('.mp4')]:  
     vidcap.set(cv2.CAP_PROP_POS_MSEC, (count * 100)) # раз в сколько мс берем кадр.
                                                      # 20 сек видео. 200 кадров, тогда кадр берется раз в 100 мс
 
-    cv2.imwrite("frame%d.tiff" % count, image) #оставить, если кадр не обрезается
-    #frame = image_cutter.cut_image(image)
-    #frame.save("frame%d.tiff" % count)
+    cv2.imwrite("frame%d.tiff" % count, image)
 
     success,image = vidcap.read()
     count += 1
 
 ```
+
+___
+## <a name="un_rec"></a> Установка и работа с Unity Recorder
+Утилита для записи видео прямо из unity3d
+  
+  следуем скриншотам  
+  во вкладку "package manager" можно еще попасть через "asset store"
+![](video_recorder_scrs/vr_1.png)
+![](video_recorder_scrs/vr_2.png)
+![](video_recorder_scrs/vr_3.png)
+
+устанавливаем 
+
+![](video_recorder_scrs/vr_4.png)
+
+затем откроется окно рекордера  
+добавляем новый рекордер movie - будет снимать видео 
+![](video_recorder_scrs/vr_5.png)
+**recording mode** ставим в Time interval, чтобы мы могли записывать нужные нам временные промежутки (удобно для нарезки)
+![](video_recorder_scrs/vr_6.png)
+1) время: с какой сек по какую (или мс, пока не уверен) на данный момент нас интересует 20 сек промежуток
+2) имя файла и путь: тут все понятно
+![](video_recorder_scrs/vr_7.png)
+чтобы начать записть. нажать на эту кнопку. Игровой мод в режиме записи откроется сам.
+![](video_recorder_scrs/vr_8.png)
