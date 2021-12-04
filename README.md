@@ -83,7 +83,10 @@ ___
 2) имя файла и путь: тут все понятно
 ![](video_recorder_scrs/vr_7.png)
 чтобы начать записть. нажать на эту кнопку. Игровой мод в режиме записи откроется сам.
-![](video_recorder_scrs/vr_8.png)  
+![](video_recorder_scrs/vr_8.png)    
+Установка нужного разрешения `238*158`
+![](video_recorder_scrs/vr_9.png) 
+![](video_recorder_scrs/vr_10.png) 
 **ВНИМАНИЕ!** Чтобы работа скриптов при записи была корректна, нужно исправить скрипт `TargetedNavMeshControl.cs`  
 в методе `void Update()`  
 ~~`seconds += 0.03f;`~~ заменить на `seconds +=  Time.deltaTime;`
