@@ -11,7 +11,8 @@ ____
 * [установка и работа с Unity Recorder](#un_rec)
 ___
 ## <a name="links"></a> Полезные ссылки
-* [Первый вариант виртуального датасета](https://disk.yandex.ru/d/uf8JffAT4FamyA)
+* [Виртуальный датасет v1.0](https://disk.yandex.ru/d/uf8JffAT4FamyA)
+* [Виртуальный датасет v1.5](https://disk.yandex.ru/d/bs05Wj3bHrYKGQ)
 * [сжать картинку до нужных размеров](https://www.imgonline.com.ua/resize-image.php) 
 * [конвертер mp4 в tiff](https://www.converter365.com/video-converter/mp4/mp4-to-tiff)
 * 
