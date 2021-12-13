@@ -20,8 +20,8 @@ for video in [file for file in os.listdir(path) if file.__contains__('.mp4')]:  
   while success:
     vidcap.set(cv2.CAP_PROP_POS_MSEC, (count * 100)) # раз в сколько мс берем кадр.
                                                      # 20 сек видео. 200 кадров, тогда кадр берется раз в 100 мс
-
-    cv2.imwrite("%d.tif" % count, image) #оставить, если кадр не обрезается
+    name = '0'*(3-len(str(count)))+"%d.tif" % count
+    cv2.imwrite(name, image) #оставить, если кадр не обрезается
 
     success,image = vidcap.read()
     count += 1
