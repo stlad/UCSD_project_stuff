@@ -11,8 +11,9 @@ ____
 * [установка и работа с Unity Recorder](#un_rec)
 ___
 ## <a name="links"></a> Полезные ссылки
-* [Виртуальный датасет v1.0](https://disk.yandex.ru/d/uf8JffAT4FamyA)
-* [Виртуальный датасет v1.5](https://disk.yandex.ru/d/bs05Wj3bHrYKGQ)
+* [UCSDped1 ver.1](https://disk.yandex.ru/d/uf8JffAT4FamyA)
+* [UCSDped1 ver.1.5](https://disk.yandex.ru/d/bs05Wj3bHrYKGQ)
+* [UCSDped2/Train ver.1.0](https://disk.yandex.ru/d/xW7wCneQ1FziLQ)
 * [сжать картинку до нужных размеров](https://www.imgonline.com.ua/resize-image.php) 
 * [конвертер mp4 в tiff](https://www.converter365.com/video-converter/mp4/mp4-to-tiff)
 * 
