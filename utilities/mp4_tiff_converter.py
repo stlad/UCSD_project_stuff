@@ -2,7 +2,6 @@ import cv2
 import os
 from PIL import Image
 
-import image_cutter
 
 path = os.getcwd() + '/video' # папка с видео
 os.chdir(path)            # папка с видео - активная

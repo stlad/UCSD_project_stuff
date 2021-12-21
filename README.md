@@ -1,96 +1,32 @@
-# Полезная иноформация, файлы и ссылки для работы над VirtualDataSet
-___
-Здесь собирется информация и ссылки на важные для пректа ресурсы и файлы.
+# Формирование искусственной БД для обучения нейронной сети
 
-____
+**Формат продукта:**  
+Икусственный датасет;  
+Обученная нейронная сеть.  
+<br>
 
-## Содержание
-* [полезные ссылки](#links)
-* [description of sitations](#descr)
-* [Работа с папкой Видео и нарезкой на кадры](#mp4_conv)
-* [установка и работа с Unity Recorder](#un_rec)
-___
-## <a name="links"></a> Полезные ссылки
-* [UCSDped1 ver.1](https://disk.yandex.ru/d/uf8JffAT4FamyA)
-* [UCSDped1 ver.1.5](https://disk.yandex.ru/d/bs05Wj3bHrYKGQ)
-* [UCSDped2/Train ver.1.0](https://disk.yandex.ru/d/xW7wCneQ1FziLQ)
-* [сжать картинку до нужных размеров](https://www.imgonline.com.ua/resize-image.php) 
-* [конвертер mp4 в tiff](https://www.converter365.com/video-converter/mp4/mp4-to-tiff)
-* 
-____
-## <a name="descr"></a> Папка description of sitations 
-в ней лежат файлы, написанные Иваном с опсианием ситуаций
-___
-## <a name="mp4_conv"></a> Папка видео
-* скачивется репозиторий
-* в папку кладутся видео в .mp4
-* запускается файл `mp4_tiff_converter.py`
-* для его работы нужны: `numpy`, `PIL`, `opencv`
-* обрезка кадров пока не реализована
+**Команда:**  
+ПроКомпетенции: №3303  
+TeamProject: 21/ЛКП-1751-2021  
+<br>  
+
+**Цель:**  
+Формирование искусственной БД для обучения нейронной сети с использованием игрового движка Unity. Тестирование простых моделей нейронных сетей на созданной БД.  
+<br>  
+
+**Опиcание:**  
+В рамках данной работы проводится создание искусственной базы данных (датасета) с помощью игрового Движка Unity. В качестве опорной БД используется [UCSD Anomaly Detection Dataset](http://www.svcl.ucsd.edu/projects/anomaly/dataset.html). После формирования БД производится тестирование обучения нейронной сети на классической БД и на искусственной.  
+В рамках работы проверяется гипотеза **о возможности искусственной генерации данных** для обучения нейронных сетей детектировать девиантное поведение.  
 
 
-## Основной файл и работа 
-`mp4_tiff_converter.py`
-
-```python
-import cv2
-import os
-from PIL import Image
-
-import image_cutter
-
-path = os.getcwd() + '/video' # папка с видео
-os.chdir(path)            # папка с видео - активная
-print(os.listdir())       # получаем список файлов
-
-for video in [file for file in os.listdir(path) if file.__contains__('.mp4')]:  # бежим по всем файлам с .mp4
-  os.chdir(path)          # папка с видео - активная
-  vidcap = cv2.VideoCapture(video)  # открываем видео файл
-  success, image = vidcap.read()    # читаем первый кадр
-  count = 0
-  os.makedirs(video[:-4])           # создаем новую папку для кадров
-  os.chdir(path+'/'+video[:-4])     # переходим в папку
-
-
-  while success:
-    vidcap.set(cv2.CAP_PROP_POS_MSEC, (count * 100)) # раз в сколько мс берем кадр.
-                                                     # 20 сек видео. 200 кадров, тогда кадр берется раз в 100 мс
-
-    cv2.imwrite("frame%d.tiff" % count, image)
-
-    success,image = vidcap.read()
-    count += 1
-
-```
+**Стек технологий:** 
+* Unity 3D
+* C#
+* Python
+* Jupiter Notebook
 
 ___
-## <a name="un_rec"></a> Установка и работа с Unity Recorder
-Утилита для записи видео прямо из unity3d
-  
-  следуем скриншотам  
-  во вкладку "package manager" можно еще попасть через "asset store"
-![](video_recorder_scrs/vr_1.png)
-![](video_recorder_scrs/vr_2.png)
-![](video_recorder_scrs/vr_3.png)
-
-устанавливаем 
-
-![](video_recorder_scrs/vr_4.png)
-
-затем откроется окно рекордера  
-добавляем новый рекордер movie - будет снимать видео 
-![](video_recorder_scrs/vr_5.png)
-**recording mode** ставим в Time interval, чтобы мы могли записывать нужные нам временные промежутки (удобно для нарезки)
-![](video_recorder_scrs/vr_6.png)
-1) время: с какой сек по какую (или мс, пока не уверен) на данный момент нас интересует 20 сек промежуток
-2) имя файла и путь: тут все понятно
-![](video_recorder_scrs/vr_7.png)
-чтобы начать записть. нажать на эту кнопку. Игровой мод в режиме записи откроется сам.
-![](video_recorder_scrs/vr_8.png)    
-Установка нужного разрешения `238*158`  
-
-![](video_recorder_scrs/vr_9.png) 
-![](video_recorder_scrs/vr_10.png) 
-**ВНИМАНИЕ!** Чтобы работа скриптов при записи была корректна, нужно исправить скрипт `TargetedNavMeshControl.cs`  
-в методе `void Update()`  
-~~`seconds += 0.03f;`~~ заменить на `seconds +=  Time.deltaTime;`
+## Результаты работы 
+* [Виртуальный датасет](https://disk.yandex.ru/d/8J9kPHXBkgxoqw) 
+* [Unity 3D проект]()
+* [Обученные нейронные сети]()
