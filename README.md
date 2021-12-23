@@ -38,7 +38,9 @@ ___
 ------------- | -------------
 Оригинал + Оригинал | ![](/Dataset%20analytics/originalOnOriginal.gif)
 Синт. + Оригинал  | ![](/Dataset%20analytics/ourOnOriginal.gif)
-Выборки в таблце описаны в формате Train+Test
+
+
+Выборки в таблице описаны в формате Train+Test
 ___
 **Стек технологий:** 
 
