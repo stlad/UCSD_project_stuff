@@ -26,18 +26,18 @@ ____
 
 -|Original  | Synthetic
 ----|------------- | -------------
-ped1/train|![](Dataset analytics/orig_ped1_train003.gif)|![](Dataset analytics/virt_ped1_train003.gif)
-ped1/test| ![](Dataset analytics/orig_ped1_test019.gif)|![](Dataset analytics/virt_ped1_test019.gif)
-ped2/train|![](Dataset analytics/orig_ped2_train006.gif)|![](Dataset analytics/virt_ped2_train006.gif)
-ped2/test|![](Dataset analytics/orig_ped2_test004.gif)|![](Dataset analytics/virt_ped2_test004.gif)
+ped1/train|![](/Dataset%20analytics/orig_ped1_train003.gif)|![](/Dataset%20analytics/virt_ped1_train003.gif)
+ped1/test| ![](/Dataset%20analytics/orig_ped1_test019.gif)|![](/Dataset%20analytics/virt_ped1_test019.gif)
+ped2/train|![](/Dataset%20analytics/orig_ped2_train006.gif)|![](/Dataset%20analytics/virt_ped2_train006.gif)
+ped2/test|![](/Dataset%20analytics/orig_ped2_test004.gif)|![](/Dataset%20analytics/virt_ped2_test004.gif)
 ___
 ### Обучение нейронных сетей
 * [Обученные нейронные сети]()  
 
 Выборки| Результат
 ------------- | -------------
-Оригинал + Оригинал | ![](Dataset analytics/originalOnOriginal.gif)
-Синт. + Оригинал  | ![](Dataset analytics/ourOnOriginal.gif)
+Оригинал + Оригинал | ![](/Dataset%20analytics/originalOnOriginal.gif)
+Синт. + Оригинал  | ![](/Dataset%20analytics/ourOnOriginal.gif)
 Выборки в таблце описаны в формате Train+Test
 ___
 **Стек технологий:** 
